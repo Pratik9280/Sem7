@@ -63,7 +63,10 @@ void nQueen(int** arr, int x, int n){
 int main(){
     int n;
     cin >> n;
-    
+    if(n==2 || n==3){
+	    cout<<"Solution for this input is not possible"<<endl;
+	    return 0;
+    }
     int **arr = new int*[n];    
     for(int i=0;i<n;i++){
         arr[i] = new int[n];
@@ -72,9 +75,9 @@ int main(){
         }
     }
 	
-	nQueen(arr, 0, n);
+	nQueen(arr, 0, n);// Printing the all solutions
 	
-	cout << "--------All possible solutions--------";
+	
 	
     return 0;
 }
