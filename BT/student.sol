@@ -15,7 +15,7 @@ contract StudentRegister{
     /**
      * @dev assigning the contract deployer as the owner
      */
-    constructor() public {
+    constructor() public { // If You get error here then just remove public
         owner=msg.sender;
     }
     
